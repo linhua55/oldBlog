@@ -1,12 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>my blog for you</title><link href="http://wen.lhwebw.tk/" rel="alternate"></link><link href="http://wen.lhwebw.tk/feeds/all.atom.xml" rel="self"></link><id>http://wen.lhwebw.tk/</id><updated>2014-12-17T15:40:00+01:00</updated><entry><title>test</title><link href="http://wen.lhwebw.tk/test.html" rel="alternate"></link><updated>2014-12-17T15:40:00+01:00</updated><author><name>Linhua</name></author><id>tag:wen.lhwebw.tk,2014-12-17:test.html</id><summary type="html">&lt;p&gt;This is a regular paragraph.&lt;/p&gt;
-&lt;table&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Foo&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>my blog for you</title><link href="http://wen.lhwebw.tk/" rel="alternate"></link><link href="http://wen.lhwebw.tk/feeds/all.atom.xml" rel="self"></link><id>http://wen.lhwebw.tk/</id><updated>2014-12-17T15:40:00+01:00</updated><entry><title>test</title><link href="http://wen.lhwebw.tk/test.html" rel="alternate"></link><updated>2014-12-17T15:40:00+01:00</updated><author><name>Linhua</name></author><id>tag:wen.lhwebw.tk,2014-12-17:test.html</id><summary type="html">&lt;h1 id="this-is-an-h1"&gt;This is an&amp;nbsp;H1&lt;/h1&gt;
+&lt;h2 id="this-is-an-h2"&gt;This is an&amp;nbsp;H2&lt;/h2&gt;
+&lt;p&gt;aaa&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae,&amp;nbsp;risus.&lt;/p&gt;
+&lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus&amp;nbsp;adipiscing.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;#include&amp;lt;stdio.h&amp;gt;
+int main()
+{
+    printf(&amp;quot;Hello World!\n&amp;quot;);
+    return 0;
+}
+&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;This is another regular paragraph.&lt;/p&gt;</summary><category term="test"></category><category term="awesome"></category></entry><entry><title>"植物人的代理人/一个人的臆想/阿凡达、代理人观后感!"</title><link href="http://wen.lhwebw.tk/zhi-wu-ren-de-dai-li-ren-yi-ge-ren-de-yi-xiang-a-fan-da-dai-li-ren-guan-hou-gan.html" rel="alternate"></link><updated>2014-12-02T00:00:00+01:00</updated><author><name>linhua</name></author><id>tag:wen.lhwebw.tk,2014-12-02:zhi-wu-ren-de-dai-li-ren-yi-ge-ren-de-yi-xiang-a-fan-da-dai-li-ren-guan-hou-gan.html</id><summary type="html">&lt;p&gt;看了《阿凡达》、布魯斯威利的《獵殺代理人》后，凭借着几年前对51单片机的学习，忽然觉着代理机器人似乎很容易实现。只要解决控制部分、动力部分及通信部分几大部分即可。其中动力部分较难实现。也许是日漫看多了的缘故，遂产生以下遐想。&lt;/p&gt;
+
+&lt;p&gt;E=mc&lt;sup&gt;2&lt;/sup&gt;&lt;sup&gt;&lt;a name="id2" id="id2"&gt;&lt;a href="#aa"&gt;[1]&lt;/a&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;a&lt;/p&gt;
+&lt;p&gt;a&lt;/p&gt;
+&lt;p&gt;a
+a
+a
+a
+a
+a
+a&amp;nbsp;a&lt;/p&gt;
+&lt;p&gt;a&lt;/p&gt;
+&lt;p&gt;aa&lt;/p&gt;
+&lt;p&gt;aa
+a
+a
+a
+a
+a
+a&amp;nbsp;a&lt;/p&gt;
+&lt;p&gt;&lt;a name="aa" id="aa"&gt;&lt;a href="#id2"&gt;[1]&lt;/a&gt;:www.baidu.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class="math"&gt;\(\frac{1}{2}\)&lt;/span&gt;
+&lt;div class="math"&gt;$$\frac{1}{\pi}=\frac{2\sqrt{2}}{9801}\sum_{k=0}^\infty\frac{(4k)!(1103+26390k)}{(k!)^4396^{4k}}$$&lt;/div&gt;
+&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: 'center'," +
+        "    displayIndent: '0em'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
+        "    } " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="test"></category><category term="awesome"></category></entry><entry><title>“植物人的代理人/一个人的臆想/阿凡达、代理人观后感!”</title><link href="http://wen.lhwebw.tk/zhi-wu-ren-de-dai-li-ren-yi-ge-ren-de-yi-xiang-a-fan-da-dai-li-ren-guan-hou-gan.html" rel="alternate"></link><updated>2014-12-02T00:00:00+01:00</updated><author><name>linhua</name></author><id>tag:wen.lhwebw.tk,2014-12-02:zhi-wu-ren-de-dai-li-ren-yi-ge-ren-de-yi-xiang-a-fan-da-dai-li-ren-guan-hou-gan.html</id><summary type="html">&lt;p&gt;看了《阿凡达》、布魯斯威利的《獵殺代理人》后，凭借着几年前对51单片机的学习，忽然觉着代理机器人似乎很容易实现。只要解决控制部分、动力部分及通信部分几大部分即可。其中动力部分较难实现。也许是日漫看多了的缘故，遂产生以下遐想。&lt;/p&gt;
 &lt;p&gt;机器人的智能化很遥远，相反代理机器人则更现实一些。代理机器人是由人&lt;code&gt;实时&lt;/code&gt;控制的。因此只要高速通信能到达的地方，机器人便会到达。它能代替人进行各种危险作业，如挖煤、建筑、深海作业、灾区工作等。它能实现人远程办公的梦想。远离家乡，远离家庭独自在外工作是一种煎熬。而通过代理机器人可实现远程工作，从而解决这些社会问题。而残疾人、植物人也可通过此获得第二次生命。&lt;/p&gt;
 &lt;p&gt;当代理机器人做成的话，人才真正能够到达全世界每一个角落。到了那个时候，劳动分工也就消除了。世界人民平等的曙光才真正到来。人总是想要舒适的工作环境、劳动强度适当、薪酬待遇高的工作，而扎堆着去考公务员，去大城市里找工作。而忽视了那些贫穷落后的区域。致使那些区域基础设施建设严重落后。而远程作业则可以解决这些问题。&lt;/p&gt;
-&lt;p&gt;我认为世界正在向实现它而发展。人控制机器进行手术，可实现手术的精细化。探月工程中为了在月球上建立适合人生活的环境，使用远程操纵机器的方式是个不错的选择。而虚拟现实技术及游戏的发展为代理机器人控制端场景重构、再现提供了经验。&lt;/p&gt;</summary></entry><entry><title>My super title</title><link href="http://wen.lhwebw.tk/my-super-post.html" rel="alternate"></link><updated>2010-12-03T10:20:00+01:00</updated><author><name>Alexis Metaireau</name></author><id>tag:wen.lhwebw.tk,2010-12-03:my-super-post.html</id><summary type="html">&lt;p&gt;This is the content of my super blog post.&lt;/p&gt;</summary><category term="thats"></category><category term="awesome"></category></entry></feed>
+&lt;p&gt;我认为世界正在向实现它而发展。人控制机器进行手术，可实现手术的精细化。探月工程中为了在月球上建立适合人生活的环境，使用远程操纵机器的方式是个不错的选择。而虚拟现实技术及游戏的发展为代理机器人控制端场景重构、再现提供了经验。&lt;/p&gt;</summary></entry><entry><title>My super title</title><link href="http://wen.lhwebw.tk/my-super-post.html" rel="alternate"></link><updated>2010-12-03T10:20:00+01:00</updated><author><name>Alexis Metaireau</name></author><id>tag:wen.lhwebw.tk,2010-12-03:my-super-post.html</id><summary type="html">&lt;p&gt;This is the content of my super blog&amp;nbsp;post.&lt;/p&gt;</summary><category term="thats"></category><category term="awesome"></category></entry></feed>
