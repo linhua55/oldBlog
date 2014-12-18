@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>my blog for you</title><link href="http://wen.lhwebw.tk/" rel="alternate"></link><link href="http://wen.lhwebw.tk/feeds/all.atom.xml" rel="self"></link><id>http://wen.lhwebw.tk/</id><updated>2014-12-17T15:40:00+01:00</updated><entry><title>test</title><link href="http://wen.lhwebw.tk/test.html" rel="alternate"></link><updated>2014-12-17T15:40:00+01:00</updated><author><name>Linhua</name></author><id>tag:wen.lhwebw.tk,2014-12-17:test.html</id><summary type="html">&lt;h1 id="this-is-an-h1"&gt;This is an&amp;nbsp;H1&lt;/h1&gt;
-&lt;h2 id="this-is-an-h2"&gt;This is an&amp;nbsp;H2&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>my blog for you</title><link href="http://wen.lhwebw.tk/" rel="alternate"></link><link href="http://wen.lhwebw.tk/feeds/all.atom.xml" rel="self"></link><id>http://wen.lhwebw.tk/</id><updated>2014-12-17T15:40:00+01:00</updated><entry><title>test</title><link href="http://wen.lhwebw.tk/test.html" rel="alternate"></link><updated>2014-12-17T15:40:00+01:00</updated><author><name>Linhua</name></author><id>tag:wen.lhwebw.tk,2014-12-17:test.html</id><summary type="html">
+&lt;h1 id="this-is-an-h1"&gt;This is an H1&lt;a class="headerlink" href="#this-is-an-h1" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="this-is-an-h2"&gt;This is an H2&lt;a class="headerlink" href="#this-is-an-h2" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;aaa&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
 consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
-Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae,&amp;nbsp;risus.&lt;/p&gt;
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
 &lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
-id sem consectetuer libero luctus&amp;nbsp;adipiscing.&lt;/p&gt;
+id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;#include&amp;lt;stdio.h&amp;gt;
-int main()
-{
-    printf(&amp;quot;Hello World!\n&amp;quot;);
-    return 0;
-}
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#include&amp;lt;stdio.h&amp;gt;&lt;/span&gt;
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Hello World!&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;"&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;E=mc&lt;sup&gt;2&lt;/sup&gt;&lt;sup&gt;&lt;a name="id2" id="id2"&gt;&lt;a href="#aa"&gt;[1]&lt;/a&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;E=mc&lt;sup&gt;2&lt;/sup&gt;&lt;sup&gt;&lt;a id="id2" name="id2"&gt;&lt;a href="#aa"&gt;[1]&lt;/a&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;a&lt;/p&gt;
 &lt;p&gt;a&lt;/p&gt;
 &lt;p&gt;a
@@ -27,7 +26,7 @@ a
 a
 a
 a
-a&amp;nbsp;a&lt;/p&gt;
+a a&lt;/p&gt;
 &lt;p&gt;a&lt;/p&gt;
 &lt;p&gt;aa&lt;/p&gt;
 &lt;p&gt;aa
@@ -36,19 +35,19 @@ a
 a
 a
 a
-a&amp;nbsp;a&lt;/p&gt;
-&lt;p&gt;&lt;a name="aa" id="aa"&gt;&lt;a href="#id2"&gt;[1]&lt;/a&gt;:www.baidu.com&lt;/a&gt;&lt;/p&gt;
+a a&lt;/p&gt;
+&lt;p&gt;&lt;a id="aa" name="aa"&gt;&lt;a href="#id2"&gt;[1]&lt;/a&gt;:www.baidu.com&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class="math"&gt;\(\frac{1}{2}\)&lt;/span&gt;
 &lt;div class="math"&gt;$$\frac{1}{\pi}=\frac{2\sqrt{2}}{9801}\sum_{k=0}^\infty\frac{(4k)!(1103+26390k)}{(k!)^4396^{4k}}$$&lt;/div&gt;
 &lt;/p&gt;
-&lt;h2 id="aaaaaaaaaaaaaaaaaaa"&gt;aaaaaaaaaaaaaaaaaaa&lt;/h2&gt;
+&lt;h2 id="aaaaaaaaaaaaaaaaaaa"&gt;aaaaaaaaaaaaaaaaaaa&lt;a class="headerlink" href="#aaaaaaaaaaaaaaaaaaa" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;a&lt;/p&gt;
 &lt;p&gt;aa&lt;/p&gt;
-&lt;p&gt;a&amp;nbsp;a&lt;/p&gt;
+&lt;p&gt;a a&lt;/p&gt;
 &lt;p&gt;a&lt;/p&gt;
 &lt;p&gt;a&lt;/p&gt;
 &lt;p&gt;aa&lt;/p&gt;
-&lt;h2 id="bbbbbbbbbbbbbbbbbbbbbb"&gt;bbbbbbbbbbbbbbbbbbbbbb&lt;/h2&gt;
+&lt;h2 id="bbbbbbbbbbbbbbbbbbbbbb"&gt;bbbbbbbbbbbbbbbbbbbbbb&lt;a class="headerlink" href="#bbbbbbbbbbbbbbbbbbbbbb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
