@@ -30,6 +30,5 @@ code, pre {
 .article-content p {
     margin: 20px 0;
     font-size: 16px;
-    font-family: Helvetica,Corbel,Verdana,Arial,sans-serif;
 }
 
