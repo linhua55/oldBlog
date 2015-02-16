@@ -1,5 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>my blog for you</title><link href="http://wen.lhwebw.tk/" rel="alternate"></link><link href="http://wen.lhwebw.tk/feeds/misc.atom.xml" rel="self"></link><id>http://wen.lhwebw.tk/</id><updated>2014-12-17T15:40:00+01:00</updated><entry><title>test</title><link href="http://wen.lhwebw.tk/test.html" rel="alternate"></link><updated>2014-12-17T15:40:00+01:00</updated><author><name>Linhua</name></author><id>tag:wen.lhwebw.tk,2014-12-17:test.html</id><summary type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>my blog for you</title><link href="http://wen.lhwebw.tk/" rel="alternate"></link><link href="http://wen.lhwebw.tk/feeds/misc.atom.xml" rel="self"></link><id>http://wen.lhwebw.tk/</id><updated>2014-12-31T10:20:00+01:00</updated><entry><title>Store</title><link href="http://wen.lhwebw.tk/store.html" rel="alternate"></link><updated>2014-12-31T10:20:00+01:00</updated><author><name>Lin Hua</name></author><id>tag:wen.lhwebw.tk,2014-12-31:store.html</id><summary type="html">&lt;p&gt;全波整流后再滤波得到的直流功率占总功率比例。&lt;/p&gt;
+&lt;p&gt;可对&lt;span class="math"&gt;\(s(t)\)&lt;/span&gt;进行积分求时间平均得到直流电压&lt;span class="math"&gt;\(V_{dc}\)&lt;/span&gt;占&lt;span class="math"&gt;\(s(t)\)&lt;/span&gt;振幅&lt;span class="math"&gt;\(V_m\)&lt;/span&gt;的比例，即&lt;/p&gt;
+&lt;div class="math"&gt;$$\begin{equation} \label{test}
+V_{dc}=\overline{s(t)}=\lim_{T \to \infty}{\frac{1}{T}
+\int_{-\frac{T}{2}}^{\frac{T}{2}}{s(t)dt}}
+\end{equation}
+$$&lt;/div&gt;
+&lt;p&gt;好吧,忘了这一点。傅里叶级数展开式中的&lt;span class="math"&gt;\(C_0\)&lt;/span&gt;也是直流电压，即&lt;span class="math"&gt;\(V_{dc}\)&lt;/span&gt;
+&lt;/p&gt;
+&lt;div class="math"&gt;$$C_n=\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{s(t)e^{-jn\Omega t}dt}$$&lt;/div&gt;
+&lt;div class="math"&gt;$$C_0=\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}{s(t)dt}$$&lt;/div&gt;
+&lt;p&gt;上式没有极限的形式，因此只适用于周期信号（周期函数）。而&lt;span class="math"&gt;\(\eqref{test}\)&lt;/span&gt;式适用于所有信号，&amp;nbsp;但非周期无限（功率）信号，不能解出，只有周期信号容易求解。&lt;/p&gt;
+&lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
+    var mathjaxscript = document.createElement('script');
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); ";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+&lt;/script&gt;</summary><category term="thats"></category><category term="awesome"></category></entry><entry><title>test1</title><link href="http://wen.lhwebw.tk/test1.html" rel="alternate"></link><updated>2014-12-31T10:20:00+01:00</updated><author><name>Lin Hua</name></author><id>tag:wen.lhwebw.tk,2014-12-31:test1.html</id><summary type="html">&lt;p&gt;This is the content of my super blog&amp;nbsp;post.&lt;/p&gt;
+&lt;p&gt;中医之所以不能成为科学的一个原因就是&lt;code&gt;无法分割提取出单个变量。测试单个变量的作用&lt;/code&gt;。由于中药含有多种成分，每种成分的作用不同，有的是有害的，有的是有利的。最典型的例子就是“以毒攻毒”，利用毒物中的有利成分去治疗疾病，再用其他中药来中和这种毒物的毒性。&lt;/p&gt;
+&lt;p&gt;说到这个当归，它既含有抑制癌的多糖，也含有刺激乳腺癌细胞增殖的雌激素活性成分。所以医生往往建议癌症晚期病人服用，而刚做完手术的则不建议服用。&lt;/p&gt;
+&lt;p&gt;请楼主客观分析说明一下，不要动不动就发个图片上去，也不配个说明。&lt;/p&gt;
+&lt;p&gt;可参考&lt;/p&gt;
+&lt;p&gt;乳腺癌病人已做手术、可不可以吃当归？&lt;/p&gt;
+&lt;p&gt;http://www.eekang.net/question/2281982.html&lt;/p&gt;
+&lt;p&gt;熟地等4味中药的植物雌激素作用的实验研究&lt;/p&gt;
+&lt;p&gt;http://www.cqvip.com/qk/95973x/200905/1000644087.html&lt;/p&gt;
+&lt;p&gt;受不了你，吞贴的百度,引用个东西都那么麻烦。&lt;/p&gt;</summary><category term="thats"></category><category term="awesome"></category></entry><entry><title>test</title><link href="http://wen.lhwebw.tk/test.html" rel="alternate"></link><updated>2014-12-17T15:40:00+01:00</updated><author><name>Linhua</name></author><id>tag:wen.lhwebw.tk,2014-12-17:test.html</id><summary type="html">
 &lt;h1 id="this-is-an-h1"&gt;This is an H1&lt;a class="headerlink" href="#this-is-an-h1" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h1&gt;
 &lt;h2 id="this-is-an-h2"&gt;This is an H2&lt;a class="headerlink" href="#this-is-an-h2" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;aaa&lt;/p&gt;
@@ -36,8 +94,8 @@ a
 a
 a a&lt;/p&gt;
 &lt;p&gt;&lt;span class="math"&gt;\(\frac{1}{2}\)&lt;/span&gt;
-&lt;div class="math"&gt;$$\frac{1}{\pi}=\frac{2\sqrt{2}}{9801}\sum_{k=0}^\infty\frac{(4k)!(1103+26390k)}{(k!)^4396^{4k}}$$&lt;/div&gt;
 &lt;/p&gt;
+&lt;div class="math"&gt;$$\frac{1}{\pi}=\frac{2\sqrt{2}}{9801}\sum_{k=0}^\infty\frac{(4k)!(1103+26390k)}{(k!)^4396^{4k}}$$&lt;/div&gt;
 &lt;h2 id="aaaaaaaaaaaaaaaaaaa"&gt;aaaaaaaaaaaaaaaaaaa&lt;a class="headerlink" href="#aaaaaaaaaaaaaaaaaaa" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;a&lt;/p&gt;
 &lt;p&gt;aa&lt;/p&gt;
@@ -48,6 +106,16 @@ a a&lt;/p&gt;
 &lt;h2 id="bbbbbbbbbbbbbbbbbbbbbb"&gt;bbbbbbbbbbbbbbbbbbbbbb&lt;a class="headerlink" href="#bbbbbbbbbbbbbbbbbbbbbb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a id="aa" name="aa"&gt;&lt;a href="#id2"&gt;[1]&lt;/a&gt;:www.baidu.com&lt;/a&gt;&lt;/p&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width &lt; 768) ? "left" : align;
+        indent = (screen.width &lt; 768) ? "0em" : indent;
+        linebreak = (screen.width &lt; 768) ? 'true' : linebreak;
+    }
+    
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
@@ -58,8 +126,8 @@ a a&lt;/p&gt;
         "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
         "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
         "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: 'center'," +
-        "    displayIndent: '0em'," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
         "    showMathMenu: true," +
         "    tex2jax: { " +
         "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
@@ -68,8 +136,9 @@ a a&lt;/p&gt;
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-        "    } " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
         "}); ";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>my blog for you</title><link href="http://wen.lhwebw.tk/" rel="alternate"></link><link href="http://wen.lhwebw.tk/feeds/tt-rss.atom.xml" rel="self"></link><id>http://wen.lhwebw.tk/</id><updated>2015-02-16T03:06:00+01:00</updated><entry><title>Backup tt-rss on openshift</title><link href="http://wen.lhwebw.tk/backup-tt-rss-on-openshift.html" rel="alternate"></link><updated>2015-02-16T03:06:00+01:00</updated><author><name>Lin Hua</name></author><id>tag:wen.lhwebw.tk,2015-02-16:backup-tt-rss-on-openshift.html</id><summary type="html">&lt;h1 id="_1"&gt;工具&lt;a class="headerlink" href="#_1" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;1.proxychains、shadowsocks&lt;/p&gt;
+&lt;p&gt;2.ssh&lt;/p&gt;
+&lt;p&gt;3.&lt;a href="https://github.com/iwonbigbro/gsync"&gt;gsync&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;pip install&amp;nbsp;beautifulsoup4&lt;/p&gt;
+&lt;p&gt;pip install&amp;nbsp;typogrify&lt;/p&gt;
+&lt;h1 id="_2"&gt;开始&lt;a class="headerlink" href="#_2" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;首先，ssh进入openshift的tt-rss的gear，速度慢时，可用proxychains加上shadowsocks的代理&lt;/p&gt;
+&lt;p&gt;进入gear后，改变HOME目录&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;HOME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$OPENSHIFT_DATA_DIR&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h1 id="postgresql"&gt;备份PostgreSQL数据库&lt;a class="headerlink" href="#postgresql" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;只需使用pg__dump命令即可，不必使用pg__dumpall命令，因为是备份单一数据库，且备份的数据库的名字和要恢复到的是不同的。&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;cd&lt;/span&gt; ~/backup
+pg_dump -f rss.backup php
+把php数据库备份为rss.backup文件
+&lt;span class="nb"&gt;time &lt;/span&gt;gsync --owner --group --progress   -d -r -vi -c ~/backup/ drive:///backup/
+注：gsync同步时，是用新文件覆盖同名的旧文件，-c选项指用校验鉴定新旧文件
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;然后新建一个tt-rss的gear,如果用openshift官方的quickstart，则数据库名为填写url时，自己添的那一部分&lt;/p&gt;
+&lt;h1 id="postgresql_1"&gt;恢复Postgresql数据库&lt;a class="headerlink" href="#postgresql_1" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="sftpsshgear"&gt;通过SFTP（&lt;span class="caps"&gt;SSH&lt;/span&gt;）在两个gear间传输数据&lt;a class="headerlink" href="#sftpsshgear" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;需要设置ssh的密钥和配置文件。&lt;/p&gt;
+&lt;p&gt;关于密钥,可以自己生成，然后将公钥文件内容贴到openshift的相应设置界面里，或者将本地的私钥文件上传到服务器上&lt;/p&gt;
+&lt;p&gt;配置文件的内容如下&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;IdentityFile /var/lib/openshift/547eb7044382ecfcfe00002c/app-root/data/.ssh/id_rsa
+UserKnownHostsFile /var/lib/openshift/547eb7044382ecfcfe00002c/app-root/data/.ssh/known_hosts
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;然后通过指定配置文件运行ssh命令(注意：改变HOME目录并不能改变.ssh的路径及配置文件的路径，且改&amp;nbsp;变HOME目录后，在配置文件中也不能使用~符号，达不到预期的效果)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;ssh -F &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;OPENSHIFT_DATA_DIR&lt;/span&gt;&lt;span class="x"&gt;/.ssh/config 54730a4ee0b8cdfdfa00000d@phpownc-lhrss.rhcloud.com&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;上面的ssh命令只是一个测试，测试成功后可使用SFTP命令传输备份的数据库文件&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="x"&gt;sftp -F &lt;/span&gt;&lt;span class="p"&gt;$&lt;/span&gt;&lt;span class="nv"&gt;OPENSHIFT_DATA_DIR&lt;/span&gt;&lt;span class="x"&gt;/.ssh/config 54730a4ee0b8cdfdfa00000d@phpownc-lhrss.rhcloud.com&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2 id="_3"&gt;恢复数据库&lt;a class="headerlink" href="#_3" title="Permanent link"&gt;&amp;para;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;由于新建tt-rss的gear后，会新建一个数据库，故先把这个数据库的所有表都删除&lt;/p&gt;
+&lt;p&gt;然后导入备份的数据库，需要指定目标数据库名字&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;psql phpownc &amp;lt; rss.backup
+
+#psql -U playboy playboy_test &amp;lt; /var/lib/pgsql/data/playboy2013.sql
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;参考&lt;/p&gt;
+&lt;p&gt;(1)&lt;a href="http://www.thegeekstuff.com/2009/01/how-to-backup-and-restore-postgres-database-using-pg_dump-and-psql/"&gt;How To Backup and Restore PostgreSQL Database Using pg_dump and&amp;nbsp;psql&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(2)&lt;a href="http://blog.51yip.com/pgsql/1535.html"&gt;postgresql 导出 导入&amp;nbsp;数据库&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(3)&lt;a href="https://github.com/iwonbigbro/gsync"&gt;iwonbigbro/gsync&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(4)&lt;a href="https://github.com/iwonbigbro/gsync/wiki/Manual#example-usage"&gt;gsync&amp;nbsp;example-usage&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;(5)&lt;a href="https://github.com/iwonbigbro/gsync/issues/71"&gt;gsync&amp;nbsp;install&lt;/a&gt;&lt;/p&gt;</summary><category term="tt-rss"></category><category term="openshift"></category><category term="sync"></category></entry></feed>

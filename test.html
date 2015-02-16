@@ -121,8 +121,8 @@ a
 a
 a a</p>
 <p><span class="math">\(\frac{1}{2}\)</span>
-<div class="math">$$\frac{1}{\pi}=\frac{2\sqrt{2}}{9801}\sum_{k=0}^\infty\frac{(4k)!(1103+26390k)}{(k!)^4396^{4k}}$$</div>
 </p>
+<div class="math">$$\frac{1}{\pi}=\frac{2\sqrt{2}}{9801}\sum_{k=0}^\infty\frac{(4k)!(1103+26390k)}{(k!)^4396^{4k}}$$</div>
 <h2 id="aaaaaaaaaaaaaaaaaaa">aaaaaaaaaaaaaaaaaaa<a class="headerlink" href="#aaaaaaaaaaaaaaaaaaa" title="Permanent link">¶</a></h2>
 <p>a</p>
 <p>aa</p>
@@ -133,6 +133,16 @@ a a</p>
 <h2 id="bbbbbbbbbbbbbbbbbbbbbb">bbbbbbbbbbbbbbbbbbbbbb<a class="headerlink" href="#bbbbbbbbbbbbbbbbbbbbbb" title="Permanent link">¶</a></h2>
 <p><a id="aa" name="aa"><a href="#id2">[1]</a>:www.baidu.com</a></p>
 <script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+    
     var mathjaxscript = document.createElement('script');
     mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
     mathjaxscript.type = 'text/javascript';
@@ -143,8 +153,8 @@ a a</p>
         "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
         "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
         "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
-        "    displayAlign: 'center'," +
-        "    displayIndent: '0em'," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
         "    showMathMenu: true," +
         "    tex2jax: { " +
         "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
@@ -153,8 +163,9 @@ a a</p>
         "        preview: 'TeX'," +
         "    }, " +
         "    'HTML-CSS': { " +
-        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'black ! important'} }" +
-        "    } " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
         "}); ";
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
@@ -195,17 +206,26 @@ a a</p>
 </section>
 
             <hr/>
+<section>
+    <h2>Related Posts</h2>
+<ul class="related-posts-list">
+<li><a href="http://wen.lhwebw.tk/my-super-post.html" title="My super title">My super title</a></li>
+<li><a href="http://wen.lhwebw.tk/store.html" title="Store">Store</a></li>
+<li><a href="http://wen.lhwebw.tk/test1.html" title="test1">test1</a></li>
+</ul>
+<hr />
+</section>
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
-            <time pubdate="pubdate" datetime="2014-12-17T15:40:00+01:00">12月 17, 2014</time>
+            <time pubdate="pubdate" datetime="2014-12-17T15:40:00+01:00">Dec 17, 2014</time>
             <h4>Category</h4>
             <a class="category-link" href="http://wen.lhwebw.tk/categories.html#misc-ref">misc</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
                 <li><a href="http://wen.lhwebw.tk/tags.html#awesome-ref">awesome
-                    <span>2</span>
+                    <span>4</span>
 </a></li>
                 <li><a href="http://wen.lhwebw.tk/tags.html#test-ref">test
                     <span>1</span>
