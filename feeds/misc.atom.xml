@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>my blog for you</title><link href="http://wen.lhwebw.tk/" rel="alternate"></link><link href="http://wen.lhwebw.tk/feeds/misc.atom.xml" rel="self"></link><id>http://wen.lhwebw.tk/</id><updated>2014-12-31T10:20:00+01:00</updated><entry><title>Store</title><link href="http://wen.lhwebw.tk/store.html" rel="alternate"></link><updated>2014-12-31T10:20:00+01:00</updated><author><name>Lin Hua</name></author><id>tag:wen.lhwebw.tk,2014-12-31:store.html</id><summary type="html">&lt;p&gt;全波整流后再滤波得到的直流功率占总功率比例。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>my blog for you</title><link href="http://wen.lhwebw.tk/" rel="alternate"></link><link href="http://wen.lhwebw.tk/feeds/misc.atom.xml" rel="self"></link><id>http://wen.lhwebw.tk/</id><updated>2014-12-31T10:20:00+01:00</updated><entry><title>anyone</title><link href="http://wen.lhwebw.tk/anyone.html" rel="alternate"></link><updated>2014-12-31T10:20:00+01:00</updated><author><name>Lin Hua</name></author><id>tag:wen.lhwebw.tk,2014-12-31:anyone.html</id><summary type="html">&lt;p&gt;几个数据
+9.7英寸 2048x1536(2048/1536=4/3)
+长：9.7x25.4/5x4=197.104(mm)
+宽：9.7x25.4/5x3=147.828(mm)
+如果一行显示130个英文字母
+竖着看：一个英文字母占1536/130=11.8 个像素宽，宽147.828/130=1.13713846154(mm)&amp;nbsp;横着看：一个英文字母占2048/130=15.75个像素宽，宽197.104/130=1.51618461538(mm)&lt;/p&gt;
+&lt;p&gt;8英寸   1280x800(1280/800=16/10=8/5)
+长：8x25.4/sqrt(8^2+5^2)x8=172.313255374(mm)
+宽：8x25.4/sqrt(8^2+5^2)x5=107.695784609(mm)
+如果一行显示130个英文字母
+竖着看：一个英文字母占800/130=6.15 个像素宽，宽107.695784609/130=0.828429112377(mm)&amp;nbsp;横着看：一个英文字母占1280/130=9.84个像素宽，宽172.313255374/130=1.3254865798(mm)&lt;/p&gt;
+&lt;p&gt;ipython&amp;nbsp;notebook的markdown中不能添加脚注(footnote)&lt;/p&gt;</summary><category term="thats"></category><category term="awesome"></category></entry><entry><title>Store</title><link href="http://wen.lhwebw.tk/store.html" rel="alternate"></link><updated>2014-12-31T10:20:00+01:00</updated><author><name>Lin Hua</name></author><id>tag:wen.lhwebw.tk,2014-12-31:store.html</id><summary type="html">&lt;p&gt;全波整流后再滤波得到的直流功率占总功率比例。&lt;/p&gt;
 &lt;p&gt;可对&lt;span class="math"&gt;\(s(t)\)&lt;/span&gt;进行积分求时间平均得到直流电压&lt;span class="math"&gt;\(V_{dc}\)&lt;/span&gt;占&lt;span class="math"&gt;\(s(t)\)&lt;/span&gt;振幅&lt;span class="math"&gt;\(V_m\)&lt;/span&gt;的比例，即&lt;/p&gt;
 &lt;div class="math"&gt;$$\begin{equation} \label{test}
 V_{dc}=\overline{s(t)}=\lim_{T \to \infty}{\frac{1}{T}
@@ -76,13 +87,8 @@ id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;E=mc&lt;sup&gt;2&lt;/sup&gt;&lt;sup&gt;&lt;a id="id2" name="id2"&gt;&lt;a href="#aa"&gt;[1]&lt;/a&gt;&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;a
-a
-a
-a
-a
-a
-a a&lt;/p&gt;
+&lt;p&gt;a&lt;/p&gt;
+&lt;p&gt;Footnotes&lt;sup id="fnref:1"&gt;&lt;a class="footnote-ref" href="#fn:1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; have a label&lt;sup id="fnref:label"&gt;&lt;a class="footnote-ref" href="#fn:label" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; and a definition&lt;sup id="fnref:!DEF"&gt;&lt;a class="footnote-ref" href="#fn:!DEF" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;a&lt;/p&gt;
 &lt;p&gt;a&lt;/p&gt;
 &lt;p&gt;aa&lt;/p&gt;
@@ -105,6 +111,27 @@ a a&lt;/p&gt;
 &lt;p&gt;aa&lt;/p&gt;
 &lt;h2 id="bbbbbbbbbbbbbbbbbbbbbb"&gt;bbbbbbbbbbbbbbbbbbbbbb&lt;a class="headerlink" href="#bbbbbbbbbbbbbbbbbbbbbb" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a id="aa" name="aa"&gt;&lt;a href="#id2"&gt;[1]&lt;/a&gt;:www.baidu.com&lt;/a&gt;&lt;/p&gt;
+&lt;div class="footnote"&gt;
+&lt;hr/&gt;
+&lt;ol&gt;
+&lt;li id="fn:1"&gt;
+&lt;p&gt;This is a footnote &lt;a class="footnote-backref" href="#fnref:1" rev="footnote" title="Jump back to footnote 1 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:label"&gt;
+&lt;p&gt;A footnote on “label” &lt;a class="footnote-backref" href="#fnref:label" rev="footnote" title="Jump back to footnote 2 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id="fn:!DEF"&gt;
+&lt;p&gt;The definition of a footnote.
+a
+a
+a
+a
+a
+a
+a &lt;a class="footnote-backref" href="#fnref:!DEF" rev="footnote" title="Jump back to footnote 3 in the text"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 &lt;script type="text/javascript"&gt;if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
     var align = "center",
         indent = "0em",
