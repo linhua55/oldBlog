@@ -30,6 +30,16 @@ code, pre {
 .article-content p {
     margin: 20px 0;
     font-size: 16px;
-    font-family: Helvetica,"Source Sans Pro",Arial,sans-serif;
+    font-family: Helvetica,"DejaVu Sans","Source Sans Pro",Arial,sans-serif;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+        font-family: "Helvetica Neue","Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
+        font-weight: normal;
+   }
 
